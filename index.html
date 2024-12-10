@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Socket.IO Hola Mundo</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        var socket = io();
+        socket.on('message', function(msg){
+          document.body.innerHTML = '<h1>' + msg + '</h1>';
+        });
+      });
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
